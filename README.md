@@ -7,15 +7,15 @@
 The goal of this project is to utilize public datasets that have been used for heart disease
 prediction and try and apply machine learning techniques such as: 
 
-    - K-Nearest Neighbors (KNN)
+- K-Nearest Neighbors (KNN)
 
-    - Decision Trees (DT)
+- Decision Trees (DT)
 
-    - Random Forests (RF)
+- Random Forests (RF)
 
-    - Naive Bayes (NB)
+- Naive Bayes (NB)
     
-    - Support Vector Machines (SVM)
+- Support Vector Machines (SVM)
 
 in order to replicate these results and better cement my understanding of these algorithms and how to use them.
 
@@ -39,7 +39,7 @@ Once the topic was decided, I combed through 9 research papers online to see wha
     
 The [Cleveland](https://archive.ics.uci.edu/dataset/45/heart+disease) dataset from University of Chicago - Irvine was by far the most popular dataset used in papers, so this is the one I chose to use. It was used by two papers in IEEE and two other papers as well. 
 
-Some other notable datasets include:
+Some other notable datasets that were used in these papers include:
         
 - [Statlog](https://archive.ics.uci.edu/dataset/145/statlog+heart) which is also from UCI
 
