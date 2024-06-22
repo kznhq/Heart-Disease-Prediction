@@ -32,6 +32,10 @@
 ## Datasets
     
     The [Cleveland](https://archive.ics.uci.edu/dataset/45/heart+disease) dataset from University of Chicago - Irvine was by far the most popular dataset used in papers, so this is the one I chose to use. It was used by two papers in IEEE and two other papers as well. 
+    The [Cleveland](https://archive.ics.uci.edu/dataset/45/heart+disease) dataset **fully typed**
+    The [Cleveland](https://archive.ics.uci.edu/dataset/45/heart+disease) dataset **nvim y+p link**
+    The [Cleveland](https://archive.ics.uci.edu/dataset/45/heart+disease) dataset **yp name type
+    link**
 
     Some other notable datasets include:
         
