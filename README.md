@@ -5,7 +5,8 @@
 
 ## Problem Statement
 
-    The goal of this project is to utilize public datasets that have been used for heart disease prediction and try and apply machine learning techniques such as:
+        The goal of this project is to utilize public datasets that have been used for heart disease 
+    prediction and try and apply machine learning techniques such as:
         - K-Nearest Neighbors (KNN)
         - Decision Trees (DT)
         - Random Forests (RF)
@@ -16,9 +17,15 @@
 
 ## Context
 
-    After learning about various machine learning techniques through independent study, it came the time for me to apply this knowledge in projects in order to have project experience and practical application knowledge of how to use these algorithms.  
+        After learning about various machine learning techniques through independent study, it came the
+    the time for me to apply this knowledge in projects in order to have project experience as well
+    as practical application knowledge of how to use these algorithms.  
 
-    I knew I wanted to do a medical application of ML because I find it way more fulfilling to use ML for these purposes rather than for algorithms that increase a consumer's engagement on some social media app or to recommend the next show to binge on a streaming service. I picked heart disease specifically because there are many people in my life that have heart disease issues, so this was a relevant topic that ML could be applied to in an actually practical way. 
+        I knew I wanted to do a medical application of ML because I find it way more fulfilling to use
+    ML for these purposes rather than for algorithms that increase a consumer's engagement on some
+    social media app or to recommend the next show to binge on a streaming service. I picked
+    heart disease specifically because there are many people in my life that have heart disease
+    issues, so this was a relevant topic that ML could be applied to in an actually practical way.  
 
     Once the topic was decided, I combed through 9 research papers online to see what datasets and ML techniques they used, and also to familiarize myself with the technical language that these ML researchers use to get a deeper understanding of what's going on. The conclusions from this reading was that the algorithms listed in the Problem Statement were the most commonly tested ones, so those are the algorithms I decided to use. The papers I used are linked at the bottom in the References section.
 
