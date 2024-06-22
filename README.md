@@ -36,8 +36,11 @@
     Some other notable datasets include:
         
         - [Statlog](https://archive.ics.uci.edu/dataset/145/statlog+heart) which is also from UCI
+
         - [Framingham](https://www.kaggle.com/datasets/captainozlem/framingham-chd-preprocessed-data) from Kaggle
+
         - [SPECTF](https://archive.ics.uci.edu/dataset/96/spectf+heart) from UCI
+
         - [Ulianova](https://www.kaggle.com/datasets/sulianova/cardiovascular-disease-dataset) from Kaggle
 
 
@@ -45,11 +48,19 @@
 ## References
 
     1. [S. Mohan, C. Thirumalai and G. Srivastava, "Effective Heart Disease Prediction Using Hybrid Machine Learning Techniques," in IEEE Access, vol. 7, pp. 81542-81554, 2019, doi: 10.1109/ACCESS.2019.2923707](https://ieeexplore.ieee.org/abstract/document/8740989)
+
     2. [Marelli, A, Li, C, Liu, A. et al. Machine Learning Informed Diagnosis for Congenital Heart Disease in Large Claims Data Source. JACC Adv. 2024 Feb, 3 (2)](https://doi.org/10.1016/j.jacadv.2023.100801)
+
     3. [J. P. Li, A. U. Haq, S. U. Din, J. Khan, A. Khan and A. Saboor, "Heart Disease Identification Method Using Machine Learning Classification in E-Healthcare," in IEEE Access, vol. 8, pp. 107562-107582, 2020, doi: 10.1109/ACCESS.2020.3001149.](https://ieeexplore.ieee.org/abstract/document/9112202)
+
     4. [Shah, D., Patel, S. & Bharti, S.K. Heart Disease Prediction using Machine Learning Techniques. SN COMPUT. SCI. 1, 345 (2020).](https://doi.org/10.1007/s42979-020-00365-y)
+
     5. [Rani, P., Kumar, R., Jain, A. et al. An Extensive Review of Machine Learning and Deep Learning Techniques on Heart Disease Classification and Prediction. Arch Computat Methods Eng (2024).](https://doi.org/10.1007/s11831-024-10075-w)
+
     6. [Bhatt CM, Patel P, Ghetia T, Mazzeo PL. Effective Heart Disease Prediction Using Machine Learning Techniques. Algorithms. 2023; 16(2):88.](https://doi.org/10.3390/a16020088)
+
     7. [Das, S., Nayak, S.P., Sahoo, B. et al. Machine Learning in Healthcare Analytics: A State-of-the-Art Review. Arch Computat Methods Eng (2024).](https://doi.org/10.1007/s11831-024-10098-3)
+    
     8. [Luca Brunese, Fabio Martinelli, Francesco Mercaldo, Antonella Santone, Machine learning for coronavirus covid-19 detection from chest x-rays, Procedia Computer Science, Volume 176, 2020, Pages 2212-2221, ISSN 1877-0509,](https://doi.org/10.1016/j.procs.2020.09.258)
+
     9. [Wankhede J, Kumar M, Sambandam P. Efficient heart disease prediction-based on optimal feature selection using DFCSS and classification by improved Elman-SFO. IET Syst Biol. 2020 Dec;14(6):380-390. doi: 10.1049/iet-syb.2020.0041. PMID: 33399101; PMCID: PMC8687167.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8687167/)
