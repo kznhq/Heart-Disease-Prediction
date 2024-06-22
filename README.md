@@ -37,6 +37,9 @@
     The [Cleveland](https://archive.ics.uci.edu/dataset/45/heart+disease) dataset **yp name type
     link**
 
+    The [Cleveland](https://archive.ics.uci.edu/dataset/45/heart+disease) dataset **typed with
+    blank line space**
+
     Some other notable datasets include:
         
         - [Statlog](https://archive.ics.uci.edu/dataset/145/statlog+heart) which is also from UCI
