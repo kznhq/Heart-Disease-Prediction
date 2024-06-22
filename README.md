@@ -1,9 +1,11 @@
 # Heart Disease Prediction ML Project
 ### Kaizan Haque
+## Sample H2 header
 
 [google](https://google.com)
 [not google](https://archive.ics.uci.edu/dataset/45/heart+disease)
 The [Cleveland](https://archive.ics.uci.edu/dataset/45/heart+disease) dataset
+
 
 ## Problem Statement
 
@@ -31,7 +33,8 @@ The [Cleveland](https://archive.ics.uci.edu/dataset/45/heart+disease) dataset
 
     Once the topic was decided, I combed through 9 research papers online to see what datasets and ML techniques they used, and also to familiarize myself with the technical language that these ML researchers use to get a deeper understanding of what's going on. The conclusions from this reading was that the algorithms listed in the Problem Statement were the most commonly tested ones, so those are the algorithms I decided to use. The papers I used are linked at the bottom in the References section.
 
-### Datasets
+
+## Datasets
     
     The [Cleveland](https://archive.ics.uci.edu/dataset/45/heart+disease) dataset from University of Chicago - Irvine was by far the most popular dataset used in papers, so this is the one I chose to use. It was used by two papers in IEEE and two other papers as well. 
     The [Cleveland](https://archive.ics.uci.edu/dataset/45/heart+disease) dataset **fully typed**
