@@ -21,7 +21,7 @@ in order to replicate these results and better cement my understanding of these
 algorithms and how to use them.
 
 
-## Context
+## Motivation
 
 After learning about various machine learning techniques through independent 
 study, it came the the time for me to apply this knowledge in projects in order
