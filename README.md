@@ -1,5 +1,5 @@
 # Heart Disease Prediction ML Project
-### Kaizan Haque
+Kaizan Haque
 
 
 ## Problem Statement
