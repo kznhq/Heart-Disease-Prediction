@@ -4,8 +4,8 @@
 
 ## Problem Statement
 
-The goal of this project is to utilize public datasets that have been used for heart disease
-prediction and try and apply machine learning techniques such as: 
+The goal of this project is to utilize public datasets that have been used for 
+heart disease prediction and try and apply machine learning techniques such as: 
 
 - K-Nearest Neighbors (KNN)
 
