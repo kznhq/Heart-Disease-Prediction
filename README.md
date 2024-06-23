@@ -17,37 +17,51 @@ heart disease prediction and try and apply machine learning techniques such as:
     
 - Support Vector Machines (SVM)
 
-in order to replicate these results and better cement my understanding of these algorithms and how to use them.
+in order to replicate these results and better cement my understanding of these 
+algorithms and how to use them.
 
 
 ## Context
 
-After learning about various machine learning techniques through independent study, it came the
-the time for me to apply this knowledge in projects in order to have project experience as well
-as practical application knowledge of how to use these algorithms.  
+After learning about various machine learning techniques through independent 
+study, it came the the time for me to apply this knowledge in projects in order
+to have project experience as well as practical application knowledge of how to 
+use these algorithms.  
 
-I knew I wanted to do a medical application of ML because I find it way more fulfilling to use
-ML for these purposes rather than for algorithms that increase a consumer's engagement on some
-social media app or to recommend the next show to binge on a streaming service. I picked
-heart disease specifically because there are many people in my life that have heart disease
-issues, so this was a relevant topic that ML could be applied to in an actually practical way.  
+I knew I wanted to do a medical application of ML because I find it way more 
+fulfilling to use ML for these purposes rather than for algorithms that increase
+a consumer's engagement on some social media app or to recommend the next show
+to binge on a streaming service. I picked heart disease specifically because
+there are many people in my life that have heart disease issues, so this was a
+relevant topic that ML could be applied to in an actually practical way.  
 
-Once the topic was decided, I combed through 9 research papers online to see what datasets and ML techniques they used, and also to familiarize myself with the technical language that these ML researchers use to get a deeper understanding of what's going on. The conclusions from this reading was that the algorithms listed in the Problem Statement were the most commonly tested ones, so those are the algorithms I decided to use. The papers I used are linked at the bottom in the References section.
+Once the topic was decided, I combed through 9 research papers online to see
+what datasets and ML techniques they used, and also to familiarize myself with
+the technical language that these ML researchers use to get a deeper 
+understanding of what's going on. The conclusions from this reading was that
+the algorithms listed in the Problem Statement were the most commonly tested
+ones, so those are the algorithms I decided to use. The papers I used are 
+linked at the bottom in the References section.
 
 
 ## Datasets
     
-The [Cleveland](https://archive.ics.uci.edu/dataset/45/heart+disease) dataset from University of Chicago - Irvine was by far the most popular dataset used in papers, so this is the one I chose to use. It was used by two papers in IEEE and two other papers as well. 
+The [Cleveland](https://archive.ics.uci.edu/dataset/45/heart+disease) dataset 
+from University of Chicago - Irvine was by far the most popular dataset used in
+papers, so this is the one I chose to use. It was used by two papers in IEEE
+and two other papers as well. 
 
 Some other notable datasets that were used in these papers include:
         
 - [Statlog](https://archive.ics.uci.edu/dataset/145/statlog+heart) which is also from UCI
 
-- [Framingham](https://www.kaggle.com/datasets/captainozlem/framingham-chd-preprocessed-data) from Kaggle
+- [Framingham](https://www.kaggle.com/datasets/captainozlem/framingham-chd-preprocessed-data)
+from Kaggle
 
 - [SPECTF](https://archive.ics.uci.edu/dataset/96/spectf+heart) from UCI
 
-- [Ulianova](https://www.kaggle.com/datasets/sulianova/cardiovascular-disease-dataset) from Kaggle
+- [Ulianova](https://www.kaggle.com/datasets/sulianova/cardiovascular-disease-dataset)
+from Kaggle
 
 
 
