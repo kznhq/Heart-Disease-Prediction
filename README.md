@@ -7,6 +7,8 @@ Kaizan Haque
 The goal of this project is to utilize public datasets that have been used for 
 heart disease prediction and try and apply machine learning techniques such as: 
 
+- Logistic Regression (LR)
+
 - K-Nearest Neighbors (KNN)
 
 - Decision Trees (DT)
@@ -63,6 +65,39 @@ from Kaggle
 - [Ulianova](https://www.kaggle.com/datasets/sulianova/cardiovascular-disease-dataset)
 from Kaggle
 
+
+## Data Exploration
+
+After importing the dataset with the Python code on the UCI website of the 
+dataset, now came the time for data cleaning and getting an overall feel for 
+the data. There are 13 columns of various features and 303 rows according to 
+
+```X.describe``` 
+
+where X was the dataset with 13 features: 
+
+- age (in years)
+- sex (1=male, 0=female)
+- cp (chest pain type, 1=typical angina, 2=atypical, 3=non-anginal pain, 4=asymptomatic)
+- trestbps (resting blood pressure in mm Hg)
+- chol (serum cholesterol in mg/dl
+- fbs (fasting blood sugar > 120 mg/dl, 1=true, 0=false)
+- restecg (resting ecg results, 0=normal, 1=ST-T wave abnormality, 2=probable or definite left ventricular hypertrophy)
+- thalach (maximum heart rate achieved)
+- exang (exercise induced angina, 1=yes, 0=no)
+- oldpeak (ST depression induced by exercise relative to rest) 
+- slope (slope of the peak exercise ST segment, 1=upward slope, 2=flat, 3=down)
+- ca (number of major vessels 0-3 colored by fluoroscopy)
+- thal (3=normal, 6=fixed defect, 7=reversable defect)
+
+The variable ```y``` on the other hand represents a 14th feature, num, which is
+going to be the output of the model to diagnose heart disease (disclaimer: this
+model should not be used for actual medical diagnosis, this is just based off of
+a dataset a computer engineering student got their hands on, please go see an 
+actual doctor if you have heart concerns). Here, a value of 0 indicates <50% 
+diameter narrowing in any major vessel of the cardiovascular system, thus a 
+negative heart disease prediction. A value of 1 would indicate >50% diameter
+narrowing and thus would indicate a prediction of heart disease for the individual.
 
 
 ## References
