@@ -1,4 +1,4 @@
-# Heart Disease Prediction ML Project
+
 Kaizan Haque
 
 
@@ -115,8 +115,8 @@ high as possible. This while loop will be run twice: once each for 5-fold and 10
 
 ## Results
 
-For KNN, we got that the best accuracy was 0.552183908045977 by using 22 nearest
-neighbors and 10-fold cross-validation. 
+For KNN, we got that the best accuracy score was 0.552183908045977 by using 22 
+nearest neighbors and 10-fold cross-validation. 
 
 ## References
 

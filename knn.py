@@ -1,6 +1,8 @@
 from ucimlrepo import fetch_ucirepo 
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.model_selection import KFold #using k-fold cross-validation to train model
+from sklearn.metrics import accuracy_score
+
 
 if __name__ == '__main__':
   
@@ -16,7 +18,7 @@ if __name__ == '__main__':
     best_neighbor_value, max_score = 0, 0
 
     #number of folds we will use for k-fold cross-validation, after researching it looked like 5 and 10 were the common values to use
-    num_folds = 15
+    num_folds = 10
 
     num_neighbors = 2
 
@@ -35,7 +37,8 @@ if __name__ == '__main__':
                 X_test = X_clean.iloc[test_index]
                 y_test = y_clean.iloc[test_index]
                 model.fit(X_train, y_train.values.ravel())
-                score += model.score(X_test, y_test)
+                y_pred = model.predict(X_test)
+                score += accuracy_score(y_pred, y_test)
 
             score = score / num_folds
             if score > max_score:
