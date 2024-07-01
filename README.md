@@ -7,8 +7,6 @@ Kaizan Haque
 The goal of this project is to utilize public datasets that have been used for 
 heart disease prediction and try and apply machine learning techniques such as: 
 
-- Logistic Regression (LR)
-
 - K-Nearest Neighbors (KNN)
 
 - Decision Trees (DT)
@@ -21,6 +19,11 @@ heart disease prediction and try and apply machine learning techniques such as:
 
 in order to replicate these results and better cement my understanding of these 
 algorithms and how to use them.
+
+(disclaimer: this model should not be used for actual medical diagnosis, this
+is just based off of a dataset a computer engineering student got their hands on
+in order to further their understanding of how to properly use different 
+machine learning models. Please go see an actual doctor if you have heart concerns)
 
 
 ## Motivation
@@ -91,14 +94,29 @@ where X was the dataset with 13 features:
 - thal (3=normal, 6=fixed defect, 7=reversable defect)
 
 The variable ```y``` on the other hand represents a 14th feature, num, which is
-going to be the output of the model to diagnose heart disease (disclaimer: this
-model should not be used for actual medical diagnosis, this is just based off of
-a dataset a computer engineering student got their hands on, please go see an 
-actual doctor if you have heart concerns). Here, a value of 0 indicates <50% 
-diameter narrowing in any major vessel of the cardiovascular system, thus a 
-negative heart disease prediction. A value of 1 would indicate >50% diameter
-narrowing and thus would indicate a prediction of heart disease for the individual.
+going to be the output of the model to diagnose heart disease . Here, a value 
+of 0 indicates <50% diameter narrowing in any major vessel of the cardiovascular
+system, thus a negative heart disease prediction. A value of 1 would indicate >50%
+diameter narrowing and thus would indicate a prediction of heart disease for the individual.
 
+
+## K-Nearest Neighbors
+
+The strategy for this one was to clean the dataset by removing the na values 
+then use k-fold cross-validation to train the sets. For the value of k, we tried
+5 and 10 because, after some research, it looked like those were the most common
+values for k to use. 
+
+Next, we set up a while loop to try different values of k for KNN (which uses 
+a different number of the nearest neighbors to classify a data point) and put
+the upper limit of k to wherever the program would throw an error, so it was as
+high as possible. This while loop will be run twice: once each for 5-fold and 10-fold.
+
+
+## Results
+
+For KNN, we got that the best accuracy was 0.552183908045977 by using 22 nearest
+neighbors and 10-fold cross-validation. 
 
 ## References
 
