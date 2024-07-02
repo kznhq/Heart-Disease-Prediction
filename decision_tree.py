@@ -31,7 +31,7 @@ if __name__ == '__main__':
     for i in range(2, (len(X_clean.index))): 
         try:
             # model = DecisionTreeClassifier(min_samples_leaf=i, criterion='entropy')
-            model = DecisionTreeClassifier(min_samples_leaf = 5)
+            model = DecisionTreeClassifier(min_samples_leaf = 11)
             kfold = KFold(n_splits = num_folds, shuffle = True) 
 
             score = 0.0
@@ -66,6 +66,6 @@ if __name__ == '__main__':
     heatmap.xaxis.set_ticklabels(heatmap.xaxis.get_ticklabels(), rotation=45, ha='right')
     plt.ylabel('True label')
     plt.xlabel('Predicted label')
-    plt.title('DT Model Results with low min_samples_leaf = 5')
-    plt.savefig('dt_confusion_matrix_low_msl.png')
+    plt.title('DT Model Results')
+    plt.savefig('dt_confusion_matrix.png')
     plt.show()

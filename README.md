@@ -143,6 +143,10 @@ is unfortunate. If we were to combat this, we would probably remove some of the
 features with 0 so there was an equal number of 0, 1, 2, 3, 4 or at least closer
 to an equal amount. 
 
+We settled on a min_samples_leaf value of 11 because it kind of balanced the 
+spread out predictions, instead of only predicting 0's, and had decent accuracy 
+(roughly 53%)
+
 
 ## References
 
