@@ -1,7 +1,12 @@
 from ucimlrepo import fetch_ucirepo 
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.model_selection import KFold #using k-fold cross-validation to train model
-from sklearn.metrics import accuracy_score
+from sklearn.metrics import accuracy_score, confusion_matrix
+import matplotlib.pyplot as plt
+import seaborn as sns
+import pandas as pd
+import numpy as np
+import math
 
 
 if __name__ == '__main__':
@@ -17,16 +22,21 @@ if __name__ == '__main__':
 
     best_neighbor_value, max_score = 0, 0
 
+    #store the predictions and test values of the best model so that we can do a confusion matrix later
+    confusion_pred, confusion_test = [], []
+
+    #initializing y_pred and y_test to avoid edge case errors, these will store the predictions of the model and the actual values, respectively
+    y_pred = []
+    y_test = []
+
     #number of folds we will use for k-fold cross-validation, after researching it looked like 5 and 10 were the common values to use
-    num_folds = 10
+    num_folds = 5
 
-    num_neighbors = 2
-
-    #looping through different values of n_neighbors to make the models and get their scores
-    while True:
+    #looping through different values of n_neighbors to make the models and get their scores, looking at what a good number of neighbors is without overfitting made me come to the conclusion that sqrt(how many datapoints there are) was considered a default start
+    for i in range(2, round(math.sqrt(len(X_clean.index)))): 
         try:
-            model = KNeighborsClassifier(n_neighbors = num_neighbors)
-            kfold = KFold(n_splits = num_folds) 
+            model = KNeighborsClassifier(n_neighbors = i, weights='distance')
+            kfold = KFold(n_splits = num_folds, shuffle = True) 
 
             score = 0.0
 
@@ -43,12 +53,24 @@ if __name__ == '__main__':
             score = score / num_folds
             if score > max_score:
                 max_score = score
-                best_neighbor_value = num_neighbors
-            num_neighbors += 1
-            if num_neighbors == 200:
-                print('30')
-                print(score)
+                best_neighbor_value = i
+                confusion_pred = y_pred
+                confusion_test = y_test
         except:
             break
 
     print(max_score, best_neighbor_value, num_folds)
+    
+    confusion = confusion_matrix(confusion_test, confusion_pred)
+    val = np.asmatrix(confusion)
+    classnames = list(set(confusion_pred))
+    df_cm = pd.DataFrame(val)
+    plt.figure()
+    heatmap = sns.heatmap(df_cm, annot=True, cmap="Blues")
+    heatmap.yaxis.set_ticklabels(heatmap.yaxis.get_ticklabels(), rotation=0, ha='right')
+    heatmap.xaxis.set_ticklabels(heatmap.xaxis.get_ticklabels(), rotation=45, ha='right')
+    plt.ylabel('True label')
+    plt.xlabel('Predicted label')
+    plt.title('KNN Model Results')
+    plt.savefig('knn_confusion_matrix.png')
+    plt.show()

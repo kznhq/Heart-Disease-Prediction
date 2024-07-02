@@ -109,14 +109,24 @@ values for k to use.
 
 Next, we set up a while loop to try different values of k for KNN (which uses 
 a different number of the nearest neighbors to classify a data point) and put
-the upper limit of k to wherever the program would throw an error, so it was as
-high as possible. This while loop will be run twice: once each for 5-fold and 10-fold.
+the upper limit of k to the square root of the total number of points because my
+research said that was the default assumption if nothing else is known and I 
+wanted to make sure I avoided overfitting. This while loop will be run twice: once
+each for 5-fold and 10-fold.
+
+The program produces a new confusion matrix every time the file is run, but the
+sample one in the GitHub is a solid representation of what the results are every
+time.
 
 
 ## Results
 
-For KNN, we got that the best accuracy score was 0.552183908045977 by using 22 
-nearest neighbors and 10-fold cross-validation. 
+For KNN, I ran the model a few times with 5 and 10 folds and got a little over
+54% accuracy every time with 10-fold cross-validation whlie 5-fold was around
+53%, so the final model uses 10-fold. The 10-fold model usually used around 15 
+neighbors. Looking at the confusion matrix, the model often predicted 0s but got 
+a lot of those right so that just means that the dataset has a lot of 0 datapoints
+which represents people who don't have cardiovascular disease.
 
 ## References
 
