@@ -107,26 +107,42 @@ then use k-fold cross-validation to train the sets. For the value of k, we tried
 5 and 10 because, after some research, it looked like those were the most common
 values for k to use. 
 
-Next, we set up a while loop to try different values of k for KNN (which uses 
+Next, we set up a for loop to try different values of k for KNN (which uses 
 a different number of the nearest neighbors to classify a data point) and put
 the upper limit of k to the square root of the total number of points because my
 research said that was the default assumption if nothing else is known and I 
-wanted to make sure I avoided overfitting. This while loop will be run twice: once
+wanted to make sure I avoided overfitting. This for loop will be run twice: once
 each for 5-fold and 10-fold.
 
 The program produces a new confusion matrix every time the file is run, but the
 sample one in the GitHub is a solid representation of what the results are every
 time.
 
-
-## Results
-
-For KNN, I ran the model a few times with 5 and 10 folds and got a little over
+I ran the model a few times with 5 and 10 folds and got a little over
 54% accuracy every time with 10-fold cross-validation whlie 5-fold was around
 53%, so the final model uses 10-fold. The 10-fold model usually used around 15 
 neighbors. Looking at the confusion matrix, the model often predicted 0s but got 
 a lot of those right so that just means that the dataset has a lot of 0 datapoints
 which represents people who don't have cardiovascular disease.
+
+
+## Decision Tree
+
+We used the same strategy as KNN with the cleaning and k-fold cross-validation
+to keep things consistent.
+
+We changed around different parameters in the constructor for the DecisionTreeClassifier, 
+experimenting to see how they impacted results. We also found that 10-fold cross-validation 
+gave better accuracy than 5-fold. When changing around min_samples_leaf, we found
+that at a low number like 5, the predictions were more spread out but the accuracy
+went down to 48-49%. When the number was high like 200, we got a higher accuracy 
+around 55% but pretty much all of the predictions are 0. Part of this is probably
+due to the observation from earlier where most of the targets are actually 0,
+so the safest guess for the model is 0 and that gives the highest accuracy which
+is unfortunate. If we were to combat this, we would probably remove some of the
+features with 0 so there was an equal number of 0, 1, 2, 3, 4 or at least closer
+to an equal amount. 
+
 
 ## References
 
